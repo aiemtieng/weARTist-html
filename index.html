@@ -4,29 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>weARTist</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="header">
-        <section class="flex">
-            <a href="home.html"class="logo">weARTist</a>
-        <nav class="nvabar">
-            <a href="home.html">Home</a>
-            <a href="Art.html">Art</a>
-            <a href="Commission.html">Commission</a>
-            <a href="Shop.html">Shop</a>
-        </nav>
-        <div class="icons">
-            <a href="search.html"><i class="fas fa-search"></i></a>
-            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
-            <div id="user-btn" class="fas fa-user"></div>
-            <div id="menu-btn" class="fas fa-bars"></div>
-        </div>
-        </section>
-    </header>
+   <header>
+      <input type="checkbox" name="" id="toggler">
+      <label for="toggler" class="fas fa-bars"></label>
+      
+      <div class="logo">Logo</div>
 
-    
+      <ul class="navbar">
+         <li><a href="Commission.html">Commission</a></li>
+         <li><a href="Shop.html">Shop</a></li>
+         <li><a href="Login.html">Login</a></li>
+         <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+      </ul>
+        
+   </header>
+
+     <section class="parallax">
+      <h2 id="text">weARTist</h2>
+      <img src="image/cream.jpg" id="cream">
+      <img src="image/art4 (1).png" id="art4">
+      <img src="image/kon1.png" id="kon1">
+      <img src="image/kon2.png" id="kon2">   
+   </section>
+
+   <section class="about" id="about">
+      <h2 class="heading"><span> <br><br><br>about </span> us </h2>
+      <div class="row">
+         <div class="scroll">
+            <div class="item"><img src="image/purple.png" alt=""></div>
+            <div class="item"><img src="image/green.png" alt=""></div>
+            <div class="item"><img src="image/blue.png" alt=""></div>
+            <div class="item"><img src="image/red.png" alt=""></div>
+         </div>
+         <div class="content">
+            <p>weARTist เว็บติสๆ สำหรับคนรักงานอาร์ต 
+               <br>เป็นเว็บไซต์สื่อกลางสำหรับเยี่ยมชมผลงานศิลป์ของเหล่านักวาดได้อย่างอิสระ <br>และเป็นแพลตฟอร์มสำหรับนักวาดที่จะลงผลงานแสดงความอาร์ต
+               <br>ให้ผู้เยี่ยมชมได้ชมกันในรูปแบบของนิทรรศการงานศิลปะออนไลน์ <br>นอกจากนี้เว็บไซต์ของเรายังเป็นสื่อกลางการซื้อ-ขายงานศิลป์ออนไลน์อีกด้วย!</p>
+         </div>
+      </div>
+   </section>
+  
+ <script src="script.js"></script>
 </body>
 </html>
