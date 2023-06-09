@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: #ffe5ea;    
+}
+.btn-hamburger {
+    font-size: 1.5rem;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*แถบบาร์ด้านบน*/
+.logo img{
+    width: 10%;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    color:#2f0742;
+    text-decoration: none;
+    margin-left: 1px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+nav ul li  a:hover{
+    background: #c490d1;
+    color: white;
+}
+
+
+
+/*ตรงส่วนรูปปก*/
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: black;
+    top: 10%;
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.parallax img{
+    position: absolute;
+    top: 1%;
+    left: auto;
+    width: 90%;
+    pointer-events: none;
+    
+}
+.parallax img#cream{
+    top: 75%;
+    width: 100%;
+}
+.parallax img#kon1{
+    width: 13%;
+    top: 52%;
+    right: 30%;
+    transform: translateX(0px);
+}
+.parallax img#kon2{
+    width: 30%;
+    top: 65%;
+    left: 21%;
+    transform: translateX(10px);
+}
+
+
+/*about us*/
+.about{
+    text-align: center;
+    background: white;
+}
+.about .row{
+    display: flex;
+    justify-content: space-around; /* จัดตำแหน่งตามแกน X */
+    align-items: center;/* จัดตำแหน่งตามแกน Y */  
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+}
+.scroll{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    margin-left: 13%;
+    margin-top: 3%;
+    overflow: hidden;
+     
+}
+.scroll .item{
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    animation: autoscroll 10s linear infinite;
+    
+}
+@keyframes autoscroll {
+    0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(0);
+      }
+      30% {
+        transform: translateX(-100%);
+      }
+      55% {
+        transform: translateX(-100%);
+      }
+      60% {
+        transform: translateX(-200%);
+      }
+      85% {
+        transform: translateX(-200%);
+      }
+      90% {
+        transform: translateX(-300%);
+      }
+      100% {
+        transform: translateX(-300%);
+      }
+  }
+.scroll img{
+    width: auto;
+    height: 500px;
+    float: left;
+}
+.row .content{
+    align-items: center;
+    justify-content: center;
+}
+.content h2{
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+}
+.content p{
+    text-align: left; 
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif; 
+}
+
+
+/* ส่วนข้อความแนะนำรูปภาพใหม่ๆ */
+.newart{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.art-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  /* Adjust this value if needed */
+}
+
+.art-message h3{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 70px;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;  
+}
+.art-message p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-family: 'Kanit', sans-serif;  
+} 
+
+/* ส่วนแนะนำรูปภาพใหม่ๆ */
+:root {
+    --scrollcolor: #d40436;
+    --scrollbackground: #141e27;
+}
+.newart{
+    background: #ffe5ea;
+}
+.slider {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+.slider__content {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scrollbar-color: var(--scrollcolor) var(--scrollbackground);
+  }
+.slider__content::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 1rem;
+    background: var(--scrollbackground);
+  }
+.slider__content::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: var(--scrollcolor);
+  }
+.slider__content::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background: var(--scrollbackground);
+  }
+.slider__item {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 100%;
+    width: 100%;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1;
+  }
+@media (min-width: 460px) {
+    .slider__item {
+      aspect-ratio: 0.6666666667;
+      min-width: calc((100% / 2) - 2rem);
+   }
+  }
+@media (min-width: 940px) {
+    .slider__item {
+      min-width: calc((100% / 3) - 4rem);
+   }
+  }
+.slider__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+.slider__info {
+    position: relative;
+    padding: 4rem 2rem 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(32, 50, 57, 0));
+  }
+.slider__info h2 {
+    color: #fff;
+    font-family: system-ui;
+    line-height: 1.1;
+    font-weight: 300;
+    font-size: 1.75rem;
+    margin: 0;
+  }
+.slider__nav {
+    margin: 1rem 0 4rem;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+@media (min-width: 460px) {
+    .slider__nav {
+      justify-content: flex-end;
+   }
+}
+.slider__nav__button {
+    margin: 0;
+    appearance: none;
+    border: 0;
+    border-radius: 2rem;
+    background: #fff;
+    color: #203239;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    line-height: 1;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+    opacity: 0.25;
+}
+.slider__nav__button--active {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/*footer*/
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+
+
+
+/*เว็บปรับเปลี่ยนตามขนาดหน้าจอ เดี๋ยวกลับมาแก้*/
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .parallax{
+        background-position: left;
+    }
+}
+
+@media (max-width:768px){
+    html .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0,100% 0,0 0);
+    }
+    header #toggler:checked~ .navbar{
+        clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+         
+}

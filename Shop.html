@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>     
+        <meta charset="UTF-8">     
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <title>Shopping</title>      
+        <link rel="stylesheet" href="Shop.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="Shop.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    </head> 
+    <body style="background: white;">      
+        <nav>         
+            <div class="nav-container">           
+                <a href="nav-container">             
+                    <a href="weARTist.html"><img src="image/Logo.png" class="logonav"></a>           
+                </a> 
+                <ul>
+                    <li><a href="Commission.html">Commission</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="signIn.html">Login</a></li>
+                </ul>       
+                <div class="nav-profile">
+                    <div onclick="openCart()" class="nav-profile-cart">
+                        <i href="cart.html" class="fas fa-shopping-bag" ></i>
+                        <div id="cartcount" class="cartcount" style="display: none;">
+                            0
+                        </div>
+                    </div>
+
+                </div>
+            </div>     
+        </nav> 
+        <div class="container">
+            <div class="sidebar">
+                <input onkeyup="searchsomething(this)" id="txt_search" type="text" class="sidebar-search" placeholder="Search...">
+            </div>
+            <div id="productlist" class="product">
+                
+            </div>
+        </div>
+        <div id="modalDesc" class="modal" style="display: none;">
+            <div onclick="closeModal()" class="modal-bg"></div>
+            <div class="modal-page">
+                <h2>Detail</h2>
+                <br>
+                <div class="modaldesc-content">
+                    <img id="mdd-img" class="modaldesc-img" src="C:\Users\ASUS\Documents\weARTist\sample1.jpg" alt="" >
+                    <div class="modaldesc-detail">
+                        <p id="mdd-name" style="font-size: 1.5vw;">Picture name</p> 
+                        <p id="mdd-price" style="font-size: 1.2vw;">999 THB</p>
+                        <br>
+                        <p id="mdd-desc" style="color: gray;">Description about this picture....<br>
+                            Picture description is a written caption that describes the essential information in an image. 
+                            Picture descriptions can define photos</p>
+                        <br>
+                        <div class="btn-control">
+                             <button onclick="closeModal()" class="btn">
+                                Close
+                             </button>
+                             <button onclick="addtocart()" class="btn-buy">
+                                Add to cart
+                             </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalCart" class="modal" style="display: none;">
+            <div onclick="closeModal()" class="modal-bg"></div>
+            <div class="modal-page">
+                <h2>My cart</h2>
+                <div id="mycart" class="cartlist">
+                    
+                </div>
+                <div class="btn-control">
+                    <button onclick="closeModal()" class="btn">
+                        Cancel
+                    </button>
+                    <a href="payment.html">
+                        <button class="btn-buy">
+                        Buy here
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>

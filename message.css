@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: #ffe5ea;
+}
+.btn-hamburger {
+    font-size: 1.5rem;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*แถบบาร์ด้านบน*/
+.logo img{
+    width: 10%;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    color:#2f0742;
+    text-decoration: none;
+    margin-left: 1px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+nav ul li  a:hover{
+    background: #2f0742;
+    color: white;
+}
+
+.artist{
+    margin-top: 5%;
+    justify-content: center;
+    
+}
+
+/*profile*/
+.person {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+    margin-left: 7%;
+  }
+.container {
+    border-radius: 50%;
+    width: 400px;
+    height: 312px;
+    transform: scale(0.48);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container:hover {
+    transform: scale(0.5);
+}
+.container-inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    top: -200px;
+    clip-path: path(
+      "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+    );
+}
+.person:nth-child img {
+    background: url(./images/merry_in_heaven_by_zzyzzyy_d8vtl9d.jpg);
+    background-size: contain;
+    background-position: center center;
+}
+img {
+    position: relative;
+    transform: translateY(20px) scale(1.15);
+    transform-origin: 50% bottom;
+    transition: 0.3s;
+}
+.container:hover img {
+    transform: translateY(0) scale(1.2);
+}
+.divider {
+    background-color: #7B406E;
+    height: 2px;
+    width: 160px;
+}
+.name {
+    color: #2f0742;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.title {
+    color: #703C82;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/*รายละเอียดของนักวาด*/
+.about-text{
+    margin-top: -124%;
+    margin-left: 29%;
+}
+.about-text h2{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 1.5rem;
+    color: #2f0742;
+}
+.about-text h3{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 1.2rem;
+    color: #C11700;
+}
+.about-text p{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #D40436;
+}
+
+/*แนะนำรูปภาพของนักวาด*/
+.art-recomment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to stack elements vertically */
+    height: 200vh;
+  }
+  
+  #mainPhoto {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    margin-left: 100%;
+    transform: translateX(-101%); /* Added to center horizontally */
+  }
+  .image-wrapper{
+    margin-bottom: 130%;
+    margin-left: 60%;
+  }
+  .imgCarousel {
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+  .imgCarousel:hover {
+    width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    margin: 3px;
+  }
+  
+  .art-recomment img {
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+
+/*chat*/
+.chat-bar-collapsible {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+    background-color:#9D56B6;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 350px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid #9D56B6;
+    border-bottom: none;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.full-chat-block {
+    width: 350px;
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: max-height 0.2s ease-out;
+}
+
+.outer-container {
+    min-height: 500px;
+    bottom: 0%;
+    position: relative;
+}
+
+.chat-container {
+    max-height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-bar-input-block {
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+#chat-icon:hover {
+    opacity: .7;
+}
+
+/* Chat bubbles */
+
+#userInput {
+    width: 75%;
+}
+
+.input-box {
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    outline: none
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #CD79B1;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+}
+
+.botText {
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards
+}
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+}

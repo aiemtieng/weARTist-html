@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+section {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: wheat;
+}
+section .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section .people {
+    margin-top: 13%;
+    position: absolute;
+    scale: 1.5;
+    pointer-events: none;
+    animation: animatePeople 40s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animatePeople {
+    0% {
+        transform: translateX(calc(100% + 100vw));
+    }
+    50% {
+        transform: translateX(calc(-100% - 100vw));
+    }
+    50.01% {
+        transform: translateX(calc(-100% - 100vw)) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(calc(100% + 100vw)) rotateY(180deg);
+    }
+}
+section .people1 {
+    margin-top: 30%;
+    position: absolute;
+    scale: 1.5;
+    pointer-events: none;
+    animation: animatePeople1 60s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animatePeople1 {
+    0% {
+        transform: translateX(calc(100% + 100vw));
+    }
+    50% {
+        transform: translateX(calc(-100% - 100vw));
+    }
+    50.01% {
+        transform: translateX(calc(-100% - 100vw)) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(calc(100% + 100vw)) rotateY(180deg);
+    }
+}
+.Login {
+    position: absolute;
+    padding: 60px;
+    background: transparent ;
+    backdrop-filter: blur(15px);
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 20px;
+    width: 1,000px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: black;
+}
+.Login h2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #eda4b0;
+    margin-bottom: 10px;
+}
+.Login .inputBox {
+    position: relative;
+}
+.Login .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+}
+.inputBox {
+    text-align: center;
+  }
+  
+  #btn {
+    background-color: #ffc0cb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #btn:hover {
+    background-color: #ffc0cb;
+  }
+.Login .group {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.Login .group a {
+    font-size: 1.00em;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+.Login .group a:nth-child(2) {
+    text-decoration: none;
+}
+

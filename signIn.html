@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  </head>
+  <body>
+    <section>
+      <img src="image/bg.jpg" class="bg" />
+      <img src="image/people.png" class="people" />
+      <img src="image/people1.png" class="people1" />
+      <div class="Login">
+        <h2>LogIn</h2>
+        <div class="inputBox">
+          <input type="email" placeholder="Email" id="email" />
+        </div>
+        <div class="inputBox">
+          <input type="password" placeholder="Password" id="password" />
+        </div>
+        <div class="inputBox">
+          <button id="btn" onclick="signIn()">Login</button>
+        </div>
+        <div class="group">
+          <a href="#">Forget Password</a>
+          <a href="signup.html">SignUp</a>
+        </div>
+      </div>
+    </section>
+    <script src="mainsign.js"></script>
+  </body>
+</html>

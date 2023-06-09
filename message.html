@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weARTist</title>
+    <link rel="shortcut icon" href="image/Logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="message.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav>
+      <button class="btn-hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="logo">
+        <a href="weARTist.html"><img src="image/Logo.png" alt="" /></a>
+      </div>
+
+      <ul>
+        <li><a href="Commission.html">Commission</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="signIn.html">Login</a></li>
+        <li>
+          <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="artist">
+      <div class="person">
+        <div class="container">
+          <div class="container-inner">
+            <img src="image/profile1.png" />
+          </div>
+        </div>
+        <div class="divider"></div>
+        <h2 class="name">Nezuko</h2>
+        <p class="title">Artis</p>
+      </div>
+
+      <section class="art-recomment">
+        <img id="mainPhoto" src="image/comic1.JPG" />
+        <div class="image-wrapper">
+          <img class="imgCarousel" src="image/comic1.JPG" />
+          <img class="imgCarousel" src="image/comic2.JPG" />
+          <img class="imgCarousel" src="image/comic3.JPG" />
+          <img class="imgCarousel" src="image/comic4.JPG" />
+          <img class="imgCarousel" src="image/comic5.JPG" />
+        </div>
+      </section>
+
+      <div class="about-text">
+        <h2>รายละเอียด</h2>
+        <h3>สวัสดีค่ะ! ฉันชื่อ คามาโดะ เนซึโกะ อายุ 21 ปี</h3>
+        <p>
+          ฉันรักในการวาดภาพและชอบดูการ์ตูนมาก โดยฉันเคยวาดภาพการ์ตูนลงหนังสือ
+          <br />วาดภาพส่งประกวด และวาดภาพขายค่ะ
+          โดยฉันมีรีวิวมากมายให้คุณสามารถตรวจสอบได้ค่ะ
+          <br />instagramสำหรับสะสมผลงานของฉันชื่อ: nezuko_art
+          <br />ตอนนี้ฉันเปิดรับคอมมิชชั่นวาดภาพการ์ตูน โดยวาดแบบdigital art
+          <br />เรทราคาในการวาด: ภาพแบบครึ่งตัว 200 บาท เต็มตัว 500บาท <br />
+          ผลงานภาพที่ฉันวาดอยู่ทางด้านขวามือเลยค่ะ
+        </p>
+      </div>
+    </div>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">
+        Chat with us!
+        <i
+          id="chat-icon"
+          style="color: #fff"
+          class="fa fa-fw fa-comments-o"
+        ></i>
+      </button>
+      <div class="content">
+        <div class="full-chat-block">
+          <!-- Message Container -->
+          <div class="outer-container">
+            <div class="chat-container">
+              <!-- Messages -->
+              <div id="chatbox">
+                <h5 id="chat-timestamp"></h5>
+                <p id="botStarterMessage" class="botText">
+                  <span>Loading...</span>
+                </p>
+              </div>
+              <!-- User input box -->
+              <div class="chat-bar-input-block">
+                <div id="userInput">
+                  <input
+                    id="textInput"
+                    class="input-box"
+                    type="text"
+                    name="msg"
+                    placeholder="Tap 'Enter' to send a message"
+                  />
+                  <p></p>
+                </div>
+                <div class="chat-bar-icons">
+                  <i
+                    id="chat-icon"
+                    style="color: crimson"
+                    class="fa fa-fw fa-heart"
+                    onclick="heartButton()"
+                  ></i>
+                  <i
+                    id="chat-icon"
+                    style="color: #333"
+                    class="fa fa-fw fa-send"
+                    onclick="sendButton()"
+                  ></i>
+                </div>
+              </div>
+              <div id="chat-bar-bottom">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="responses.js"></script>
+    <script src="message.js"></script>
+    <script src="photorecomment.js"></script>
+  </body>
+</html>

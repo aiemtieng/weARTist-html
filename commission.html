@@ -1,9 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commission</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="Commission.css">
 </head>
 <body>
-    
+    <nav>
+        <button class="btn-hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+  
+        <div class="logo"><a href="weARTist.html"><img src="image/Logo.png" alt=""></a></div>
+  
+        <ul>
+           <li><a href="Commission.html">Commission</a></li>
+           <li><a href="Shop.html">Shop</a></li>
+           <li><a href="signIn.html">Login</a></li>
+           <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="about-commission">
+        <h1>C<span class="auto-input"></span></h1>
+        <p>Commission พื้นที่สำหรับนักวาดและคนรักภาพวาด
+        <br> ติดต่อกันเพื่อจ้างงานวาดภาพแบบที่ตัวเองต้องการ ลูกค้าสามารถบรีฟงานกับนักวาดได้
+        <br>ดยการติดต่อจะเป็นแบบส่วนตัวทั้งหมด</p>
+        <img src="image/artcommis.png" class="artcommis">
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-input",{
+            strings: ["ommission"],
+            typeSpeed: 100, backSpeed: 100,loop: true
+        })
+    </script>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="image/profile1.png">
+                    <h2>Kamado Nezuko</h2>
+                    <p>Artist</p>
+                    <button>about me</button>
+                </div>
+                <div class="back">
+                    <img src="image/profile1.png">
+                    <h1>Kamado <br><span>Nezuko</span></h1>
+                    <p>ฉันคือนักวาดการ์ตูน สนใจสามารถติดต่อได้เลย</p>
+                     <div class="row">
+                        <div class="col">
+                            <h2>31.1k</h2>
+                            <p>Followers</p>
+                        </div>
+                        <div class="col">
+                            <h2>150</h2>
+                            <p>Following</p>
+                        </div>
+                        <div class="col">
+                            <h2>70k</h2>
+                            <p>Likes</p>
+                        </div>
+                     </div>   
+                    <div class="link-message">
+                        <a href="message.html"><button>message</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="image/profile2.png">
+                    <h2>Kamado Tanjiro</h2>
+                    <p>Artist</p>
+                    <button>about me</button>
+                </div>
+                <div class="back">
+                    <img src="image/profile2.png">
+                    <h1>Kamado <br><span>Tanjiro</span></h1>
+                    <p>ฉันคือนักวาดภาพสีน้ำมัน สนใจสามารถติดต่อได้เลย</p>
+                     <div class="row">
+                        <div class="col">
+                            <h2>30.1k</h2>
+                            <p>Followers</p>
+                        </div>
+                        <div class="col">
+                            <h2>100</h2>
+                            <p>Following</p>
+                        </div>
+                        <div class="col">
+                            <h2>50k</h2>
+                            <p>Likes</p>
+                        </div>
+                     </div>   
+                    <div class="link-message">
+                        <a href="message.html"><button>message</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="image/profile3.png">
+                    <h2>Agatsuma Zenitsu</h2>
+                    <p>Artist</p>
+                    <button>about me</button>
+                </div>
+                <div class="back">
+                    <img src="image/profile3.png">
+                    <h1>Agatsuma <br><span>Zenitsu</span></h1>
+                    <p>ฉันคือนักวาดภาพสีน้ำ สนใจสามารถติดต่อได้เลย</p>
+                     <div class="row">
+                        <div class="col">
+                            <h2>21.1k</h2>
+                            <p>Followers</p>
+                        </div>
+                        <div class="col">
+                            <h2>10</h2>
+                            <p>Following</p>
+                        </div>
+                        <div class="col">
+                            <h2>7k</h2>
+                            <p>Likes</p>
+                        </div>
+                     </div>   
+                    <div class="link-message">
+                        <a href="message.html"><button>message</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="image/profile4.png">
+                    <h2>Tsuyuri Kanao</h2>
+                    <p>Artist</p>
+                    <button>about me</button>
+                </div>
+                <div class="back">
+                    <img src="image/profile4.png">
+                    <h1>Tsuyuri<br><span>Kanao</span></h1>
+                    <p>ฉันคือนักวาดแฟนอาร์ต สนใจสามารถติดต่อได้เลย</p>
+                     <div class="row">
+                        <div class="col">
+                            <h2>1.1k</h2>
+                            <p>Followers</p>
+                        </div>
+                        <div class="col">
+                            <h2>50</h2>
+                            <p>Following</p>
+                        </div>
+                        <div class="col">
+                            <h2>1k</h2>
+                            <p>Likes</p>
+                        </div>
+                     </div>   
+                    <div class="link-message">
+                        <a href="message.html"><button>message</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="image/profile5.png">
+                    <h2>Kocho Shinobu</h2>
+                    <p>Artist</p>
+                    <button>about me</button>
+                </div>
+                <div class="back">
+                    <img src="image/profile5.png">
+                    <h1>Kocho<br><span>Shinobu</span></h1>
+                    <p>ฉันคือนักวาดภาพอาหาร สนใจสามารถติดต่อได้เลย</p>
+                     <div class="row">
+                        <div class="col">
+                            <h2>31k</h2>
+                            <p>Followers</p>
+                        </div>
+                        <div class="col">
+                            <h2>50</h2>
+                            <p>Following</p>
+                        </div>
+                        <div class="col">
+                            <h2>30k</h2>
+                            <p>Likes</p>
+                        </div>
+                     </div>   
+                    <div class="link-message">
+                        <a href="message.html"><button>message</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="image/profile6.png">
+                    <h2>Tomioka Giyu</h2>
+                    <p>Artist</p>
+                    <button>about me</button>
+                </div>
+                <div class="back">
+                    <img src="image/profile6.png">
+                    <h1>Tomioka<br><span>Giyu</span></h1>
+                    <p>ฉันคือนักวาดภาพทิวทัศน์ สนใจสามารถติดต่อได้เลย</p>
+                     <div class="row">
+                        <div class="col">
+                            <h2>21.1k</h2>
+                            <p>Followers</p>
+                        </div>
+                        <div class="col">
+                            <h2>250</h2>
+                            <p>Following</p>
+                        </div>
+                        <div class="col">
+                            <h2>20k</h2>
+                            <p>Likes</p>
+                        </div>
+                     </div>   
+                    <div class="link-message">
+                        <a href="message.html"><button>message</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="image/profile7.png">
+                    <h2>Kanroji Mitsuri</h2>
+                    <p>Artist</p>
+                    <button>about me</button>
+                </div>
+                <div class="back">
+                    <img src="image/profile7.png">
+                    <h1>Kanroji <br><span>Mitsuri</span></h1>
+                    <p>ฉันคือนักวาดภาพเลียนแบบ สนใจสามารถติดต่อได้เลย</p>
+                     <div class="row">
+                        <div class="col">
+                            <h2>1k</h2>
+                            <p>Followers</p>
+                        </div>
+                        <div class="col">
+                            <h2>50</h2>
+                            <p>Following</p>
+                        </div>
+                        <div class="col">
+                            <h2>3k</h2>
+                            <p>Likes</p>
+                        </div>
+                     </div>   
+                    <div class="link-message">
+                        <a href="message.html"><button>message</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="image/profile8.png">
+                    <h2>Kanzaki Aoi</h2>
+                    <p>Artist</p>
+                    <button>about me</button>
+                </div>
+                <div class="back">
+                    <img src="image/profile8.png">
+                    <h1>Kanzaki <br><span>Aoi</span></h1>
+                    <p>ฉันคือนักวาดสีเทียน สนใจสามารถติดต่อได้เลย</p>
+                     <div class="row">
+                        <div class="col">
+                            <h2>10k</h2>
+                            <p>Followers</p>
+                        </div>
+                        <div class="col">
+                            <h2>300</h2>
+                            <p>Following</p>
+                        </div>
+                        <div class="col">
+                            <h2>4k</h2>
+                            <p>Likes</p>
+                        </div>
+                     </div>   
+                    <div class="link-message">
+                        <a href="message.html"><button>message</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>    
 </body>
 </html>
